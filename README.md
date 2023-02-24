@@ -9,4 +9,4 @@
 
 ### Presentación
 
-[Presentacion proyecto]()
+[Presentacion proyecto](https://www.canva.com/design/DAFbWUc0uAo/B71P53WK2dfwybmrmnMXrQ/edit)
