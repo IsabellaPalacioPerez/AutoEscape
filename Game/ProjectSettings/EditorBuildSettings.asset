@@ -230,4 +230,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ESCENAS/Inicio.unity
     guid: 0329e88966a4c9c41b8c3a2756e5d190
+  - enabled: 1
+    path: Assets/ESCENAS/Settings.unity
+    guid: 8b22e7a446a99ed498f915294271d7de
+  - enabled: 1
+    path: Assets/ESCENAS/Instrucciones.unity
+    guid: 679108c48c7c2e14ebdf4f3f3840b0fa
   m_configObjects: {}

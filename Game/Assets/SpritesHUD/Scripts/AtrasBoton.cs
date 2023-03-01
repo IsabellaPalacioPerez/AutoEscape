@@ -10,4 +10,10 @@ public class AtrasBoton : MonoBehaviour
     {
         SceneManager.LoadScene("Inicio", LoadSceneMode.Single);
     }
+
+    public void OnPressAtrasJuego()
+    {
+        SceneManager.LoadScene("FeaturesInventory", LoadSceneMode.Single);
+    }
+
 }
