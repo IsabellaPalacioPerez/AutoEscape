@@ -13,6 +13,7 @@ public class PickUp1 : PickableItem
     private int valor_pickUp1;
     private ControlPickUp1 control_PickUp1;
 
+
     public void Start()
     {
         control_PickUp1 = ui_puntaje.GetComponent<ControlPickUp1>();

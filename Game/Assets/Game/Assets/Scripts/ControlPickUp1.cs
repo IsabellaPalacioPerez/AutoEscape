@@ -5,6 +5,7 @@ using TMPro;
 
 public class ControlPickUp1 : MonoBehaviour
 {
+  
     [SerializeField]
     private TMP_Text txt_contador_pickUp1;
     private int contador_pickUp1;
@@ -13,10 +14,20 @@ public class ControlPickUp1 : MonoBehaviour
     {
         contador_pickUp1 += valor;
         ActualizarValorUI();
+
+     
     }
 
     public void ActualizarValorUI()
     {
         txt_contador_pickUp1.text = "" + contador_pickUp1;
+    }
+    public void ActualizarContador(int valor)
+    {
+        contador_pickUp1 += valor;
+    }
+    public int ContadorPickup()
+    {
+        return contador_pickUp1;
     }
 }
