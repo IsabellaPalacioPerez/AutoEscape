@@ -1,6 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Tools;
 
 public class Muro : MonoBehaviour
 {
@@ -16,7 +16,7 @@ public class Muro : MonoBehaviour
     }
     public void Update()
     {
-        if (controlPickUp1.ContadorPickup() == 15)
+        if (controlPickUp1.CantidadPickUp1Recolectados() == 15)
         {
             CambiarEstado(false);
         }
