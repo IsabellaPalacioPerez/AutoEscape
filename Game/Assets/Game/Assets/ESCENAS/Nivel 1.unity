@@ -26548,7 +26548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c245d6c8a7932194aa159be566f9bd66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt_contador_pickUp1: {fileID: 1549634078}
+  txt_contador_PickUp1: {fileID: 1549634078}
 --- !u!4 &1241915244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414104, guid: fc2284c767639fa48adbd3ff4269895e,
@@ -46358,10 +46358,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PU 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6221375801176637298, guid: 614ec8e551adc5e41a1c73c034d100d2,
+        type: 3}
+      propertyPath: Valor_PickUp1
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6221375801176637303, guid: 614ec8e551adc5e41a1c73c034d100d2,
         type: 3}
       propertyPath: ui_puntaje
       value: 
       objectReference: {fileID: 1239538261}
-    m_RemovedComponents: []
+    - target: {fileID: 6221375801176637303, guid: 614ec8e551adc5e41a1c73c034d100d2,
+        type: 3}
+      propertyPath: Valor_PickUp1
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6221375801176637303, guid: 614ec8e551adc5e41a1c73c034d100d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 614ec8e551adc5e41a1c73c034d100d2, type: 3}
