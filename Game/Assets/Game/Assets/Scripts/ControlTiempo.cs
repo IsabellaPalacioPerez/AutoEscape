@@ -7,13 +7,13 @@ public class ControlTiempo : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text txt_contador_Tiempo;
-    private int contador_Tiempo = 300;
+    private int contador_Tiempo = 60;
     private int i = 0;
 
   
     void Start()
     {
-        Invoke("TerminarTemporizador", 300f);
+        Invoke("TerminarTemporizador", 60f);
 
         InvokeRepeating("ActualizarTiempo", 0f,1f);
     }
@@ -33,7 +33,7 @@ public class ControlTiempo : MonoBehaviour
     }
     void TerminarTemporizador()
     {
-        Debug.Log("Se terminó el tiempo");
+        Debug.Log("Se terminï¿½ el tiempo");
 
     }
 }
