@@ -9,8 +9,9 @@ public class ControlTiempo : MonoBehaviour
     private TMP_Text txt_contador_Tiempo;
     private int contador_Tiempo = 60;
     private int i = 0;
+    public static ControlTiempo Instance { get; private set; }
 
-  
+
     void Start()
     {
         Invoke("TerminarTemporizador", 60f);
@@ -20,12 +21,13 @@ public class ControlTiempo : MonoBehaviour
 
     public void ActualizarTiempo()
     {
-      
-        
             contador_Tiempo -= 1;
             ActualizarValorUI();
-        
-        
+    }
+    public void SumarTiempo(int valor)
+    {
+        contador_Tiempo += valor;
+        ActualizarValorUI();
     }
     public void ActualizarValorUI()
     {
@@ -35,5 +37,9 @@ public class ControlTiempo : MonoBehaviour
     {
         Debug.Log("Se termin� el tiempo");
 
+    }
+    public void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(this); } else { Instance = this; }
     }
 }
