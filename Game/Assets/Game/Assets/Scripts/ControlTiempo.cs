@@ -35,7 +35,7 @@ public class ControlTiempo : MonoBehaviour
     }
     void TerminarTemporizador()
     {
-        Debug.Log("Se termin� el tiempo");
+        Debug.Log("Se termino el tiempo");
 
     }
     public void Awake()
