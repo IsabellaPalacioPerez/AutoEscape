@@ -15,6 +15,7 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
     void Start()
     {
         vidas = corazones.Count;
+        Debug.Log("Control Muerte");
     }
 
     public virtual void OnMMEvent(CorgiEngineEvent e)
@@ -41,11 +42,21 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
         Debug.Log("Pick");
         contador_estrellas++;
 
-        if(contador_estrellas == 3 && vidas+1 <= corazones.Count)
+        if(contador_estrellas == 5 && vidas+1 <= corazones.Count)
         {
             corazones[vidas].SetActive(true);
             vidas++;
             contador_estrellas = 0;
         }
+    }
+    void OnEnable()
+    {
+        this.MMEventStartListening<PickableItemEvent>();
+        this.MMEventStartListening<CorgiEngineEvent>();
+    }
+    void OnDisable()
+    {
+        this.MMEventStopListening<PickableItemEvent>();
+        this.MMEventStopListening<CorgiEngineEvent>();
     }
 }

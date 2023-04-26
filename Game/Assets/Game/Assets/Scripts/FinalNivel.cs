@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
 
-public class FinalNivel : MonoBehaviour
+public class FinalNivel : MonoBehaviour, MMEventListener<MMGameEvent>
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        
+        this.MMEventStartListening<MMGameEvent>();
     }
-
-    // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
+        this.MMEventStopListening<MMGameEvent>();
+    }
+    public virtual void OnMMEvent(MMGameEvent e)
+    {
+        Debug.Log(e.EventName);
+        
+        if (e.EventName == "FinNivel")
+        {
+            SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+        }
         
     }
 }
+
