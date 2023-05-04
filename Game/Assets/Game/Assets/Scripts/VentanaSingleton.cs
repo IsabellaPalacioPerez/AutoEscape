@@ -12,7 +12,6 @@ public class VentanaSingleton : MonoBehaviour
 
     private void Awake()
     {
-
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -22,6 +21,5 @@ public class VentanaSingleton : MonoBehaviour
             Instance = this;
         }
     }
-
 }
 
