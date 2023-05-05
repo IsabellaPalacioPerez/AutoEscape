@@ -14433,7 +14433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351fa1717b7ec214dab9dcc4988f7198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  muro: {fileID: 0}
+  muro: {fileID: 1472200395}
 --- !u!4 &539163957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414104, guid: fc2284c767639fa48adbd3ff4269895e,
@@ -32968,6 +32968,12 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1472200395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 142742, guid: bd1ee4470f9d1b8408a995c9702c82e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1734757566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1478100163
 PrefabInstance:
   m_ObjectHideFlags: 0

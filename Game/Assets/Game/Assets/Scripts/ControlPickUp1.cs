@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
 
-public class ControlPickUp1 : MonoBehaviour
+public class ControlPickUp1 : MonoBehaviour, MMEventListener<CorgiEngineEvent>
 {
     [SerializeField]
     private TMP_Text txt_contador_PickUp1;
@@ -12,6 +14,13 @@ public class ControlPickUp1 : MonoBehaviour
     public void Start()
     {
         
+    }
+    public virtual void OnMMEvent(CorgiEngineEvent e)
+    {
+        if (e.EventType == CorgiEngineEventTypes.PlayerDeath)
+        {
+            ResetearPuntaje();
+        }
     }
     public int CantidadPickUp1Recolectados()
     {
@@ -30,5 +39,13 @@ public class ControlPickUp1 : MonoBehaviour
     public void ActualizarValorUI()
     {
         txt_contador_PickUp1.text = ""+ contador_PickUp1;
+    }
+    void OnEnable()
+    {
+        this.MMEventStartListening<CorgiEngineEvent>();
+    }
+    void OnDisable()
+    {
+        this.MMEventStopListening<CorgiEngineEvent>();
     }
 }
