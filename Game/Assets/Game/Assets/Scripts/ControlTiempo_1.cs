@@ -8,7 +8,6 @@ public class ControlTiempo_1 : MonoBehaviour
     
     private void Start()
     {
-        Debug.Log(contador);//hasta la existencia
         StartCoroutine(Contar());
     }
 
@@ -16,7 +15,6 @@ public class ControlTiempo_1 : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         contador++;
-        Debug.Log(contador);
         StartCoroutine(Contar());
     }
 }

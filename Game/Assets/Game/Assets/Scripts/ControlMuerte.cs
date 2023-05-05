@@ -33,13 +33,10 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
                 Debug.Log("Game Over");
             }
         }
-        Debug.Log (vidas);
-        Debug.Log(e.EventType);
     }
 
     public virtual void OnMMEvent(PickableItemEvent e)
     {
-        Debug.Log("Pick");
         contador_estrellas++;
 
         if(contador_estrellas == 5 && vidas+1 <= corazones.Count)
