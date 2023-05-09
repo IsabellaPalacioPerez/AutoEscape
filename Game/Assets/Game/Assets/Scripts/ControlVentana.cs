@@ -6,21 +6,35 @@ using MoreMountains.CorgiEngine;
 
 public class ControlVentana : MonoBehaviour, MMEventListener<MMGameEvent>
 {
-    public void OnMMEvent(MMGameEvent eventType)
+    static bool vendeath = false;
+    static int tiempo = 0;
+    public void Update()
     {
-        if (eventType.EventName == "AbrirVentanaEvent")
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Space))
         {
-            //Ventana.SetActive(true);
-            VentanaSingleton.Instance.Ventana.SetActive(true);
-            GameManager.Instance.Pause(PauseMethods.NoPauseMenu);
+            tiempo = 0;
             StartCoroutine(CerrarVentana());
         }
+    }
+    public void OnMMEvent(MMGameEvent eventType)
+    {
+        if (vendeath == false)
+        {
+            if (eventType.EventName == "AbrirVentanaEvent")
+            {
+                //Ventana.SetActive(true);
+                VentanaSingleton.Instance.Ventana.SetActive(true);
+                GameManager.Instance.Pause(PauseMethods.NoPauseMenu);
+                tiempo = 5;
+                StartCoroutine(CerrarVentana());
+                vendeath= true;
+            }
+        }     
     }
 
     IEnumerator CerrarVentana()
     {
-        Debug.Log("Cerrar Ventana");
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(tiempo);
         Debug.Log("La ventana se cerro");
         GameManager.Instance.UnPause();
         VentanaSingleton.Instance.Ventana.SetActive(false);
