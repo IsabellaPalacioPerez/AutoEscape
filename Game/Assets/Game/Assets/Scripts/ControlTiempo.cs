@@ -16,9 +16,16 @@ public class ControlTiempo : MonoBehaviour, MMEventListener<CorgiEngineEvent>
     public static ControlTiempo Instance { get; private set; }
 
 
+    void Update()
+    {
+        if (contador_Tiempo == 1)
+        {
+            Invoke("TerminarTemporizador", 1f);
+        }        
+    }
     void Start()
     {
-        Invoke("TerminarTemporizador", 60);
+        
 
         InvokeRepeating("ActualizarTiempo", 0f,1f);
 

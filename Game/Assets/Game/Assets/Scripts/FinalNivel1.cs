@@ -21,7 +21,7 @@ public class FinalNivel : MonoBehaviour, MMEventListener<MMGameEvent>
         
         if (e.EventName == "FinNivel")
         {
-            SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+            SceneManager.LoadScene("Nivel 2", LoadSceneMode.Single);
         }
         
     }
