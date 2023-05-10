@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, MMEventListener<PickableItemEvent>
 {
@@ -32,7 +34,7 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
             }
             if (vidas == 0)
             {
-                Debug.Log("Game Over");
+                SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
             }
         }
     }
