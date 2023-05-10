@@ -10,7 +10,7 @@ public class ControlVentana : MonoBehaviour, MMEventListener<MMGameEvent>
     static int tiempo = 0;
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             tiempo = 0;
             StartCoroutine(CerrarVentana());

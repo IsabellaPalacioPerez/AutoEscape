@@ -20,9 +20,11 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
 
     public virtual void OnMMEvent(CorgiEngineEvent e)
     {
+        Debug.Log(e.EventType);
+
         if(e.EventType == CorgiEngineEventTypes.PlayerDeath)
         {
-            if (vidas-1 >= 1)
+            if (vidas-1 >= 0)
             {
                 vidas--;
                 contador_estrellas= 0;
