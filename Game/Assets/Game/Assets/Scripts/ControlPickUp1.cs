@@ -5,7 +5,7 @@ using TMPro;
 using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
 
-public class ControlPickUp1 : MonoBehaviour, MMEventListener<CorgiEngineEvent>
+public class ControlPickUp1 : MonoBehaviour, MMEventListener<CorgiEngineEvent>, MMEventListener<PickableItemEvent>
 {
     [SerializeField]
     private TMP_Text txt_contador_PickUp1;
@@ -20,6 +20,14 @@ public class ControlPickUp1 : MonoBehaviour, MMEventListener<CorgiEngineEvent>
         if (e.EventType == CorgiEngineEventTypes.PlayerDeath)
         {
             ResetearPuntaje();
+        }       
+    }
+    public virtual void OnMMEvent(PickableItemEvent e)
+    {
+        if (contador_PickUp1 == 15)
+        {
+            MMEventManager.TriggerEvent(new MMGameEvent("15PU"));
+            Debug.Log("Ya");
         }
     }
     public int CantidadPickUp1Recolectados()
@@ -43,9 +51,11 @@ public class ControlPickUp1 : MonoBehaviour, MMEventListener<CorgiEngineEvent>
     void OnEnable()
     {
         this.MMEventStartListening<CorgiEngineEvent>();
+        this.MMEventStartListening<PickableItemEvent>();
     }
     void OnDisable()
     {
         this.MMEventStopListening<CorgiEngineEvent>();
+        this.MMEventStopListening<PickableItemEvent>();
     }
 }
