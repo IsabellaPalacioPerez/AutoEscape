@@ -7461,6 +7461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt_contador_Tiempo: {fileID: 506929017}
+  contador_Tiempo: 80
 --- !u!1 &366926494
 GameObject:
   m_ObjectHideFlags: 0

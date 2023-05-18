@@ -11,7 +11,7 @@ public class ControlTiempoF : MonoBehaviour, MMEventListener<CorgiEngineEvent>
 {
     [SerializeField]
     private TMP_Text txt_contador_Tiempo;
-    private int contador_Tiempo = 80;
+    public int contador_Tiempo = 80;
     private int i = 0;
     public static ControlTiempoF Instance { get; private set; }
 

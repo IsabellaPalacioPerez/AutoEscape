@@ -11,7 +11,7 @@ public class PuertaFinal : PickableItem
     protected override void Pick(GameObject picker)
     {
         MMGameEvent.Trigger("FinNivel");
-        SceneManager.LoadScene("Creditos2", LoadSceneMode.Single);
+        SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
 
     }
 }
