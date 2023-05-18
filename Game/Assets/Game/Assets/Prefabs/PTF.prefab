@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8888894982853916131}
   - component: {fileID: 797474002805511686}
   - component: {fileID: 797474002805511685}
-  - component: {fileID: 3544779488285026418}
+  - component: {fileID: 2987149138881142485}
   m_Layer: 0
-  m_Name: PT
+  m_Name: PTF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   IgnoreCheckpointsAlwaysRespawn: 1
   AssociatedCheckpoints: []
   RespawnFeedback: {fileID: 0}
---- !u!114 &3544779488285026418
+--- !u!114 &2987149138881142485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 797474002805511682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905a2d8ef0c07b94fa680b36246acbca, type: 3}
+  m_Script: {fileID: 11500000, guid: 89c0f3ffe73c4d64197fb6a405ff90ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PickFeedbacks: {fileID: 0}

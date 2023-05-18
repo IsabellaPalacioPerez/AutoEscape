@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class JugarBoton : MonoBehaviour
+public class Modo : MonoBehaviour
 {
     public void OnPressPlay()
     {
-        SceneManager.LoadScene("Modo", LoadSceneMode.Single);
+        SceneManager.LoadScene("Nivel1-Facil", LoadSceneMode.Single);
     }
 
     public void OnPressInstrucciones()
     {
-        SceneManager.LoadScene("Instrucciones", LoadSceneMode.Single);
+        SceneManager.LoadScene("Nivel1-Dificil", LoadSceneMode.Single);
     }
 
     public void OnPressCreditos()
     {
-        SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+        SceneManager.LoadScene("Nivel1-Medio", LoadSceneMode.Single);
     }
 
 }

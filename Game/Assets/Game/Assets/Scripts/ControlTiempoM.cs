@@ -7,13 +7,13 @@ using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
 
 
-public class ControlTiempo : MonoBehaviour, MMEventListener<CorgiEngineEvent>
+public class ControlTiempoM : MonoBehaviour, MMEventListener<CorgiEngineEvent>
 {
     [SerializeField]
     private TMP_Text txt_contador_Tiempo;
     private int contador_Tiempo = 60;
     private int i = 0;
-    public static ControlTiempo Instance { get; private set; }
+    public static ControlTiempoM Instance { get; private set; }
 
 
     void Update()
@@ -21,15 +21,11 @@ public class ControlTiempo : MonoBehaviour, MMEventListener<CorgiEngineEvent>
         if (contador_Tiempo == 1)
         {
             Invoke("TerminarTemporizador", 1f);
-        }        
+        }
     }
     void Start()
     {
-        
-
-        InvokeRepeating("ActualizarTiempo", 0f,1f);
-
-        
+        InvokeRepeating("ActualizarTiempo", 0f, 1f);
     }
     public virtual void OnMMEvent(CorgiEngineEvent e)
     {
@@ -46,8 +42,8 @@ public class ControlTiempo : MonoBehaviour, MMEventListener<CorgiEngineEvent>
 
     public void ActualizarTiempo()
     {
-         contador_Tiempo -= 1;
-         ActualizarValorUI();
+        contador_Tiempo -= 1;
+        ActualizarValorUI();
     }
     public void SumarTiempo(int valor)
     {
