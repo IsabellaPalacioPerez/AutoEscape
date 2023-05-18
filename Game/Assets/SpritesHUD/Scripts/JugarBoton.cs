@@ -7,7 +7,7 @@ public class JugarBoton : MonoBehaviour
 {
     public void OnPressPlay()
     {
-        SceneManager.LoadScene("FeaturesInventory", LoadSceneMode.Single);
+        SceneManager.LoadScene("Modo", LoadSceneMode.Single);
     }
 
     public void OnPressInstrucciones()

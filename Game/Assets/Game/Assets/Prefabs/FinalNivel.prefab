@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1072525443809275718}
   - component: {fileID: 1072525443809275719}
   - component: {fileID: 1072525443809275716}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: FinalNivel
-  m_TagString: LevelBounds
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

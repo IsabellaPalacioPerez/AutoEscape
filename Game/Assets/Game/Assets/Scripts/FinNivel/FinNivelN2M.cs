@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
+using UnityEngine.SceneManagement;
 
-public class PickUp2 : PickableItem
+public class FinNivelN2M : PickableItem
 {
-    private int Valor_Tiempo = 15;
     protected override void Pick(GameObject picker)
     {
-        ControlTiempo.Instance.SumarTiempo(Valor_Tiempo);
+        MMGameEvent.Trigger("FinNivel");
+        SceneManager.LoadScene("Nivel3-Medio", LoadSceneMode.Single);
+
     }
 }
-
