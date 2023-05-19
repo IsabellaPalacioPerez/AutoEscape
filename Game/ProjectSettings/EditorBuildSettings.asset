@@ -243,7 +243,7 @@ EditorBuildSettings:
     path: Assets/Game/Assets/Escenas/Niveles/Nivel1-Dificil.unity
     guid: 480c34b48512532459a9622b352a5ca7
   - enabled: 1
-    path: Assets/Game/Assets/Escenas/Niveles/Nivel1-Facil.unity
+    path: Assets/Game/Assets/ESCENAS/Niveles/Nivel1-Facil.unity
     guid: 0caa6d7e1c69e5c41a47fc56e8504d3b
   - enabled: 1
     path: Assets/Game/Assets/Escenas/Niveles/Nivel1-Medio.unity
@@ -255,7 +255,7 @@ EditorBuildSettings:
     path: Assets/Game/Assets/Escenas/Niveles/Nivel2-Facil.unity
     guid: 63ccdfef629e1df45a586d7692a9e9fa
   - enabled: 1
-    path: Assets/Game/Assets/Escenas/Niveles/Nivel2-Medio.unity
+    path: Assets/Game/Assets/ESCENAS/Niveles/Nivel2-Medio.unity
     guid: 55da23197ecf9f84eb743ad62d28ef76
   - enabled: 1
     path: Assets/Game/Assets/Escenas/Niveles/Nivel3-Dificil.unity
@@ -264,7 +264,7 @@ EditorBuildSettings:
     path: Assets/Game/Assets/Escenas/Niveles/Nivel3-Facil.unity
     guid: b0225814737e655469054b38a1aee14b
   - enabled: 1
-    path: Assets/Game/Assets/Escenas/Niveles/Nivel3-Medio.unity
+    path: Assets/Game/Assets/ESCENAS/Niveles/Nivel3-Medio.unity
     guid: 04438dfc09754454eb86a8ee5dd491c2
   - enabled: 1
     path: Assets/Game/Assets/Escenas/Modo.unity
