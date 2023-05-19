@@ -20,6 +20,7 @@ public class AudioBotones : MonoBehaviour
     // Update is called once per frame
     void PlaySound()
     {
+        Debug.Log("Hola");
         source.PlayOneShot(clip);
     }
 }
