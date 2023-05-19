@@ -10,7 +10,7 @@ public class FinNivelN2D : PickableItem
     protected override void Pick(GameObject picker)
     {
         MMGameEvent.Trigger("FinNivel");
-        SceneManager.LoadScene("Nivel3-Dificl", LoadSceneMode.Single);
+        SceneManager.LoadScene("Nivel3-Dificil", LoadSceneMode.Single);
 
     }
 }
