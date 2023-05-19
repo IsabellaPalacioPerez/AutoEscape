@@ -618,8 +618,9 @@ GameObject:
   - component: {fileID: 929633952}
   - component: {fileID: 929633951}
   - component: {fileID: 929633950}
+  - component: {fileID: 929633953}
   m_Layer: 5
-  m_Name: CreditosBoton
+  m_Name: Dificil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -740,6 +741,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929633948}
   m_CullTransparentMesh: 1
+--- !u!114 &929633953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929633948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0904f6b8df5cf5f4bb313641566c2b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7417a8c6f258368409aa9d6d551effce, type: 3}
 --- !u!1 &1734737212
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,8 +766,9 @@ GameObject:
   - component: {fileID: 1734737216}
   - component: {fileID: 1734737215}
   - component: {fileID: 1734737214}
+  - component: {fileID: 1734737217}
   m_Layer: 5
-  m_Name: JugarBoton
+  m_Name: Facil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -773,7 +788,7 @@ RectTransform:
   m_Children:
   - {fileID: 851569123}
   m_Father: {fileID: 1741078889}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -874,6 +889,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734737212}
   m_CullTransparentMesh: 1
+--- !u!114 &1734737217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734737212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0904f6b8df5cf5f4bb313641566c2b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7417a8c6f258368409aa9d6d551effce, type: 3}
 --- !u!224 &1741078889 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22400000, guid: ace2d4bf56f98df4196ff81845a465d7,
@@ -892,8 +920,9 @@ GameObject:
   - component: {fileID: 1871215038}
   - component: {fileID: 1871215037}
   - component: {fileID: 1871215036}
+  - component: {fileID: 1871215039}
   m_Layer: 5
-  m_Name: InstruccionesBoton
+  m_Name: Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -913,7 +942,7 @@ RectTransform:
   m_Children:
   - {fileID: 407812226}
   m_Father: {fileID: 1741078889}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1014,3 +1043,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871215034}
   m_CullTransparentMesh: 1
+--- !u!114 &1871215039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871215034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0904f6b8df5cf5f4bb313641566c2b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7417a8c6f258368409aa9d6d551effce, type: 3}

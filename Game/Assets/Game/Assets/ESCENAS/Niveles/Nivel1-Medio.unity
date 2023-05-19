@@ -34741,7 +34741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9412278255b52543b0b744c5517d5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt_contador_Tiempo: {fileID: 340666464}
 --- !u!1001 &1652553434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35728,7 +35727,8 @@ PrefabInstance:
       propertyPath: MaximumLives
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3911849453498091643, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
 --- !u!1 &1697003743 stripped
 GameObject:
