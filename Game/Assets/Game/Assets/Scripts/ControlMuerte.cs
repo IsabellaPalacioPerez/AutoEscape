@@ -34,7 +34,7 @@ public class ControlMuerte : MonoBehaviour, MMEventListener<CorgiEngineEvent>, M
             }
             if (vidas == 0)
             {
-                SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+                SceneManager.LoadScene("SinVidas", LoadSceneMode.Single);
             }
         }
     }

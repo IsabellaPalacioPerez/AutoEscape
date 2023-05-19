@@ -56,7 +56,7 @@ public class ControlTiempoD : MonoBehaviour, MMEventListener<CorgiEngineEvent>
     }
     void TerminarTemporizador()
     {
-        SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+        SceneManager.LoadScene("SinTiempo", LoadSceneMode.Single);
         Debug.Log("Se termino el tiempo");
 
     }

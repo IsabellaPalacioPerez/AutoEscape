@@ -20,4 +20,16 @@ public class JugarBoton : MonoBehaviour
         SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
     }
 
+    public void OnPressMenu()
+    {
+        SceneManager.LoadScene("Inicio", LoadSceneMode.Single);
+    }
+
+    public void OnPressSeleccionarNivel()
+    {
+        SceneManager.LoadScene("Modo", LoadSceneMode.Single);
+    }
+
+
+
 }
