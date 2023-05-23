@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1965608220646310056}
   - component: {fileID: 1965608220646310050}
   - component: {fileID: 2778258987466520069}
+  - component: {fileID: 6179008640853623277}
+  - component: {fileID: 9092090148132460844}
   m_Layer: 13
   m_Name: M3
   m_TagString: Untagged
@@ -117,13 +119,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965608220646310051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020327091, y: -0.042922616}
+  m_Offset: {x: 0.16109753, y: -0.28424323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -134,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8246622, y: 3.2460907}
+  m_Size: {x: 1.5431213, y: 2.7634494}
   m_EdgeRadius: 0
 --- !u!114 &1965608220646310056
 MonoBehaviour:
@@ -283,3 +285,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea70cd4b789a4b5593a26c4f4ace44c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &6179008640853623277
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965608220646310051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.33}
+  m_Size: {x: 1.33, y: 2.63}
+  m_Direction: 0
+--- !u!70 &9092090148132460844
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965608220646310051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.46, y: 0.97}
+  m_Size: {x: 0.83, y: 0.53}
+  m_Direction: 0
